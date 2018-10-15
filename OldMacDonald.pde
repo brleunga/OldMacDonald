@@ -1,7 +1,6 @@
 
 void setup()
 {
-	//your variable declarations and
-	//System.out.println() statements here
+	Farm bunchOfAnimals = new Farm[3];
 }
 
