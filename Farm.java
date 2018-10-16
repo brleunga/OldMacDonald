@@ -1,14 +1,14 @@
 class Farm 
 {     
-   private Animal[] aBunchOfAnimals = new Animal[3];
+   private Animal[] aBunchofAnimals = new Animal[3];
    public Farm() {
-   	aBunchofAnimals[0] = new Cow("cow", "moo");
+   	aBunchofAnimals[0] = new NamedCow("cow", "moo", "Elsie");
    	aBunchofAnimals[1] = new Pig("pig", "oink");
-   	aBunchofAnimals[2] = new Chick("chick", "cluck");
+   	aBunchofAnimals[2] = new Chick("chick", "cheep", "cluck");
    }
    public void animalSounds() {
    	for (int i = 0; i < aBunchofAnimals.length; i++) {
-   		System.out.println(aBunchofAnimals.getType + " goes " + aBunchofAnimals.getSound);
+   		System.out.println(aBunchofAnimals[i].getType() + " goes " + aBunchofAnimals[i].getSound());
    	}
    }
 }
